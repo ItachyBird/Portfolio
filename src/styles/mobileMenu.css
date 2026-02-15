@@ -1,0 +1,113 @@
+/* ================= MOBILE BAR ================= */
+
+.mobile-bar {
+  display: none;
+}
+
+/* ================= HAMBURGER ICON ================= */
+
+.hamburger {
+  font-size: 26px;
+  cursor: pointer;
+
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  z-index: 1200;
+  color: var(--text);
+
+  display: none;
+}
+
+/* ================= MOBILE MENU OVERLAY ================= */
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1100;
+
+  animation: fadeIn 0.3s ease;
+}
+
+/* ================= CLOSE ICON ================= */
+
+.mobile-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+
+  z-index: 1201;
+}
+
+/* ================= LINKS ================= */
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.mobile-menu-links p {
+  font-size: 34px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  color: white;
+}
+
+.mobile-menu-links p:hover {
+  transform: scale(1.1);
+}
+
+/* ================= THEME TOGGLE ================= */
+
+.mobile-toggle {
+  position: absolute;
+  bottom: 60px;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  /* Hide desktop sidebar */
+  .sidebar {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* Reset wrapper spacing */
+  .page-wrapper {
+    margin-left: 0 !important;
+  }
+
+}

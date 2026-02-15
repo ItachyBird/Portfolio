@@ -1,0 +1,91 @@
+/* ===== SECTION ===== */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ===== TITLE ===== */
+
+.contact-title {
+  font-size: 52px;
+  margin-bottom: 60px;
+  width: 100%;
+  text-align: left;
+}
+
+
+/* ===== GRID ===== */
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* ===== ROUND ICON BUTTON ===== */
+
+.tech-box {
+  width: 120px;
+  height: 60px;
+
+  border-radius: 18px; /* square with curved corners */
+  border: 2px solid var(--text);
+
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text);
+  font-size: 40px;
+
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+
+/* ===== HOVER ===== */
+
+.tech-box:hover {
+  background: var(--text);
+  color: var(--bg);
+  transform: scale(1.12);
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .tech-box {
+    width: 90px;
+    min-height: 40px;   /* allow height to grow */
+    height: auto;
+
+    font-size: 16px;
+    padding: 6px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .tech-box span {
+    font-size: 10px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .contact-title {
+    font-size: 20px;
+  }
+}

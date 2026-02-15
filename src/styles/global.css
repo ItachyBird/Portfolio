@@ -1,0 +1,124 @@
+/* Hide scrollbar but allow scrolling */
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* CONTENT AREA */
+
+.page-wrapper {
+  flex: 1;
+  margin-left: 80px;
+  transition: 0.3s;
+}
+
+.content {
+  height: 100vh;
+  overflow-y: auto;
+  
+  scroll-behavior: smooth;
+}
+
+
+/* SIDEBAR */
+
+
+/* HERO SECTIONS */
+
+.section-container {
+  padding: 120px 60px;
+  min-height: 70vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+/* MOBILE TOP BAR */
+
+.mobile-bar {
+  display: none;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(12px);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+
+  .sidebar {
+    display: none;
+  }
+
+  .page-wrapper {
+    margin-left: 0;
+  }
+
+  .mobile-bar {
+    display: flex;
+  }
+
+  .section-container {
+    padding: 80px 24px; /* smaller horizontal padding */
+  }
+  .about-content {
+  min-width: 0;
+}
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading);
+}
+
+
+
+/* ===== BODY TEXT ===== */
+body {
+  font-family: "darker-grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "dynapuff", sans-serif;
+  font-weight: 500;
+}

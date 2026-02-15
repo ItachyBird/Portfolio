@@ -1,0 +1,80 @@
+/* SIDEBAR CONTAINER */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 90px;
+    background: var(--sidebar);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 100;
+
+    
+    border-right: 1px solid var(--heading);
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    margin-top: 140px;
+    align-items: center;
+}
+
+
+/* ROTATED MENU */
+
+.sidebar-nav span {
+    transform: rotate(-90deg);
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    white-space: nowrap;
+
+    color: var(--text);
+    opacity: 0.7;
+
+    transition: all 0.25s ease;
+}
+
+/* ===== HOVER EFFECT ===== */
+
+.sidebar-nav span:hover {
+    color: var(--heading);
+    opacity: 1;
+    transform: rotate(-90deg) scale(1.05);
+}
+
+/* ===== ACTIVE MENU ===== */
+
+.sidebar-nav span.active {
+    color: var(--heading);
+    opacity: 1;
+    font-weight: 600;
+}
+
+
+/* BOTTOM AREA */
+
+.sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+
+/* MOBILE HIDE */
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}

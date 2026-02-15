@@ -1,0 +1,26 @@
+.theme-toggle {
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: var(--text);
+  font-size: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* hover effect */
+.theme-toggle:hover {
+  transform: scale(1.15);
+  color: var(--heading);
+}
+
+/* click feedback */
+.theme-toggle:active {
+  transform: scale(0.95);
+}
