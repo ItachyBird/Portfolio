@@ -1,5 +1,7 @@
 import "../../styles/AboutSection.css";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 import profilePhoto from "../../assets/me.png";
 import Noise from "../../components/shaders/Noise";
 import { useTheme } from "../../context/ThemeContext";
@@ -53,11 +55,31 @@ export default function AboutSection() {
 </p>
 
 
-          <div className="about-socials">
-            <a href="#"><FaGithub /></a>
-            <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaInstagram /></a>
-          </div>
+<div className="social-links">
+  <a href="https://github.com/ItachyBird" target="_blank" rel="noreferrer">
+    <FaGithub />
+  </a>
+
+  <a href="https://www.linkedin.com/in/soumyadip-debnath-04459a231/" target="_blank" rel="noreferrer">
+    <FaLinkedin />
+  </a>
+
+  <a href="https://www.instagram.com/imperfectly_perfect_z/" target="_blank" rel="noreferrer">
+    <FaInstagram />
+  </a>
+
+  <a href="https://x.com/itachybird" target="_blank" rel="noreferrer">
+    <FaTwitter />
+  </a>
+
+  <a href="https://leetcode.com/u/user4076z/" target="_blank" rel="noreferrer">
+    <SiLeetcode />
+  </a>
+
+  <a href="mailto:soumyadipdebnath007@gmail.com">
+    <MdEmail />
+  </a>
+</div>
         </div>
 
         <div className="about-photo">
