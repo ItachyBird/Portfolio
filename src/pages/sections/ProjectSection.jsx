@@ -11,12 +11,32 @@ import weatherapp from "../../assets/projectsimg/weatherapp.png";
 import gesture from "../../assets/projectsimg/gesture.png";
 import fashion from "../../assets/projectsimg/fashion.png";
 import apple from "../../assets/projectsimg/apple.png";
+import ttov from "../../assets/projectsimg/ttov.png";
+import p2026 from "../../assets/projectsimg/p2026.png";
 
 
 export default function ProjectSection() {
 const projects = [
+      {
+    title: "Portfolio(2026)",
+    image: p2026,
+    description:
+      "Professional portfolio showcasing my latest projects, skills, and experience with a sleek design and interactive features.",
+    github: "https://github.com/ItachyBird/DrishyAI",
+    live: "#",
+    date: "Jan 2026",
+  },
+    {
+    title: "Diagram Visualizer",
+    image: ttov,
+    description:
+      "A tool that takes user ideas, improves them using AI, and automatically generates editable Mermaid diagrams as the final visual output.",
+    github: "https://github.com/ItachyBird/DrishyAI",
+    live: "#",
+    date: "Jul 2025",
+  },
   {
-    title: "Terminal Portfolio",
+    title: "Terminal Portfolio(2025)",
     image: terminal,
     description:
       "Interactive portfolio mimicking a terminal interface where users type commands to explore information and projects.",
@@ -61,7 +81,7 @@ const projects = [
     date: "Apr 2024",
   },
   {
-    title: "Spacefolio",
+    title: "Spacefolio(2024)",
     image: spacefolio,
     description:
       "3D space-themed portfolio featuring futuristic environment, animations and interactive project showcases.",
@@ -119,15 +139,15 @@ const projects = [
 
   return (
     <section id="Projects" className="project-section">
-      <h2 className="project-title mask-target1">&lt;乃ㄩ丨ㄥᗪ/&gt;</h2>
+      <h2 className="project-title ">&lt;乃ㄩ丨ㄥᗪ/&gt;</h2>
 
       <div className="project-list ">
         {projects.map((project, index) => (
-          <div className="project-card mask-target1" key={index}>
+          <div className="project-card " key={index}>
             
             {/* LEFT CONTENT */}
             <div>
-              <h3 className="project-name">{project.title}</h3>
+              <h3 className="project-name mask-target1">{project.title}</h3>
               <p className="project-description">{project.description}</p>
 
               <div className="project-links">

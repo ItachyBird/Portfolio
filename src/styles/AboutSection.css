@@ -6,15 +6,14 @@
 /* ===== HEADING ===== */
 
 .about-title {
- 
-  margin-bottom: 50px; /* 🔥 gap below heading */
+  margin-bottom: 50px;
 }
 
 /* ===== TEXT + PHOTO ROW ===== */
 
 .about-content-row {
   display: flex;
-  align-items: flex-start; /* 🔥 align photo with text */
+  align-items: flex-start;
   justify-content: space-between;
   gap: 60px;
 }
@@ -24,13 +23,13 @@
 .about-info {
   flex: 1;
   min-width: 0;
-  margin-top: 10px; /* 🔥 move text down slightly */
+  margin-top: 10px;
 }
 
 .about-text {
-  
-  line-height: 1.7;
+  line-height: 1.2;
   max-width: 650px;
+  font-size: 24px;
 }
 
 /* ===== SOCIAL ICONS ===== */
@@ -38,30 +37,30 @@
 .about-socials {
   margin-top: 35px;
   display: flex;
-  justify-content: center; /* 🔥 centered */
-  gap: 14px;
+  justify-content: center;
+  gap: 12px;
 }
 
 .about-socials a {
-  width: 48px;
-  height: 48px;
+  width: 40px;   /* 🔥 smaller */
+  height: 40px;  /* 🔥 smaller */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   text-decoration: none;
   background: rgba(255,255,255,0.12);
-  transition: transform 0.2s ease;
-  border: 1.8px solid var(--text);
+  transition: all 0.2s ease;
+  border: 1.5px solid var(--text);
   color: var(--text);
+  font-size: 18px; /* 🔥 control icon size */
 }
 
 .about-socials a:hover {
   transform: scale(1.1);
   background: var(--text);
   color: var(--bg);
-  
 }
 
 /* ===== PHOTO ===== */
@@ -70,7 +69,7 @@
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px; /* 🔥 aligns with paragraph */
+  margin-top: 10px;
 }
 
 .about-photo img {
