@@ -2,7 +2,7 @@ import "../../styles/AboutSection.css";
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
-import profilePhoto from "../../assets/me.png";
+import profilePhoto from "../../assets/me2.jpeg";
 import Noise from "../../components/shaders/Noise";
 import { useTheme } from "../../context/ThemeContext";
 
