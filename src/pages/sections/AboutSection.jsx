@@ -22,26 +22,36 @@ export default function AboutSection() {
         />
       </div>
 
-      <h2 className="about-title mask-target1">&lt;卂乃ㄖㄩㄒ /&gt;</h2>
+      <h2 className="about-title mask-target">&lt;卂乃ㄖㄩㄒ /&gt;</h2>
 
       <div className="about-content-row">
 
         <div className="about-info">
           <p className="about-text">
-            Hi, <span className="code-name">&lt;Soumyadip /&gt;</span>
-          </p>
 
-          <p className="about-text">
-            I design and build intuitive digital experiences, blending creativity with code to rapidly turn ideas into working solutions.
-          </p>
+  Hey, <span className="code-name"><b>&lt;Soumyadip /&gt;</b></span> here :
+</p>
 
-          <p className="about-text">
-            Currently working as a Junior Associate Process Executive at NVIDIA.
-          </p>
+<p className="about-text">
+  A <span className="highlight">CSE (IoT, Cyber Security & Blockchain)</span> graduate of 2025 who is deeply passionate about coding and modern web technologies. 
+  I enjoy exploring the evolving tech landscape — from building interactive web experiences to diving into emerging domains like blockchain, automation, and intelligent systems.
+</p>
 
-          <p className="about-text">
-            My work includes UX design, UI animation, and interactive prototyping.
-          </p>
+<p className="about-text">
+  I believe technology is not just about writing code, but about creating meaningful solutions. 
+  I am constantly learning, experimenting, and upgrading my skill set to grow both as a developer and as a problem solver.
+</p>
+
+<p className="about-text">
+  Previously worked as a Junior Associate Process Executive at <span className="highlight">&lt;Zensar Technologies</span>. 
+  Worked as a <b>&lt;Data Annotator/&gt;</b>, <b>&lt;Data Labeler/&gt;</b>, and <b>&lt;Prompt Engineer/&gt;</b> an AI project for the <b>&lt;NVIDIA client/&gt;</b>. This role allows me to gain hands-on experience in machine learning data preparation, quality evaluation, and model improvement workflows.
+</p>
+
+
+<p className="about-text">
+  Dreaming big, building consistently, and chasing innovation one commit at a time ||
+</p>
+
 
           <div className="about-socials">
             <a href="#"><FaGithub /></a>
