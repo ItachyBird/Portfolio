@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
 import Noise from "../components/shaders/Noise";
 import { useTheme } from "../context/ThemeContext";
-import "../styles/sidebar.css";
+import "../styles/Sidebar.css";
 
 const sections = ["home", "about", "Projects", "TechStack"];
 
